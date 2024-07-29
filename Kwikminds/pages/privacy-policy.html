@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>policy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/scss/index.css">
+</head>
+
+<body>
+    <!-- Navbar Start -->
+    <section class="container">
+        <nav class=" navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto pe-lg-4 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark btn text-black-50" href="#">Link</a>
+                        </li>
+                    </ul>
+                    <div class="nav-social">
+                        <ul class="navbar-nav ms-auto pe-lg-4 mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="search">
+                        <div class="search__wrapper">
+                            <input type="text" name="" placeholder="Search for..." class="search__field"
+                                onkeyup="search(this)">
+                            <button type="submit" class="fa fa-search search__icon"></button>
+                            <!-- Search content Start -->
+                            <div
+                                class="position-absolute d-none bg-white w-100 border border-top-0 overflow-auto search_response-output top-100 end-0 z-4">
+                                <ul class="list-unstyled pt-2 d-flex flex-column container-fluid mb-0">
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit-cover rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img z-3"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <a href="#" class="text-dark text-decoration-none">
+                                            <div class="d-flex flex-row">
+                                                <img src="../assets/images/kontidor.png"
+                                                    class="h-100 object-fit rounded-lg mr-1 search_response-img"
+                                                    height="100" width="120" alt="">
+                                                <div class="overflow-hidden d-flex align-items-center">
+                                                    <p class="text-uppercase small mb-0 text-center text-truncate">
+                                                        Holiday shopping Holiday shopping
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Search content End -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="border-top border-3 border-danger my-5">
+        <div class="card text-bg-dark my-4">
+            <img src="../assets/images/qure.png" class="card-img object-fit-cover" alt="..." style="height: 250px;">
+            <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                <h1 class="card-title">Privacy Policy of Kwikminds
+                </h1>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Content Start -->
+    <section class="container my-5">
+        <div class="p-4 shadow rounded">
+            <h1 class="fs-4 fw-bold">Privacy Policy</h1>
+
+            <p>We are dedicated to keeping your personally identifiable information ("Personal Information") accurate,
+                private, and secure. Our privacy policy sets down the rules for how we will collect, use, and disclose
+                personal information as part of this promise.</p>
+
+            <p>Please be aware that the information gathered is used to improve the user interface and streamline your
+                searches so you may enjoy using the service more. By utilizing the service, you give us permission to
+                gather and use your information in line with the terms of service and privacy statement.</p>
+
+            <h2 class="fs-5 fw-bold">DEFINITIONS AND INTERPRETATIONS</h2>
+            <p>Any capitalized word's meaning is outlined in the following clauses. Whether the definitions below are
+                written or displayed in the singular or plural, they all have the same purpose.</p>
+
+            <h3 class="fs-5 fw-bold">ONLY FOR THIS PRIVACY POLICY:</h3>
+            <ul>
+                <li><strong>Account:</strong> Refers to any account set up to use the platform or our services. In this
+                    policy, the company "kwikminds" is referred to as either "The Company".</li>
+                <li><strong>Cookies:</strong> Small files that websites place on your computer, mobile device, or other
+                    device, which, among other things, save the specifics of your browsing history on those websites.
+                </li>
+                <li><strong>Device:</strong> Any device with access to the Service, including a computer, a mobile
+                    phone, and electronic tablets.</li>
+                <li><strong>Individual or Personal Data:</strong> Any information related to a notable or recognizable
+                    person.</li>
+                <li><strong>Service:</strong> Refers to a website reference.</li>
+                <li><strong>Service Provider:</strong> Any regular or lawful person who processes information for the
+                    benefit of the Company. It relates to outside companies or individuals that the Company uses to work
+                    with the Service, to provide support for the Company's advantage, to carry out service-related
+                    services, or to assist the Company in analyzing how the Service is used.</li>
+                <li><strong>Utilization/Usage Data:</strong> Refers to information obtained from using the service or
+                    from the service's infrastructure (for example, the amount of time spent on a page).</li>
+                <li><strong>Site:</strong> Refers to KWIKMINDS, which is accessible via kwikminds.</li>
+                <li><strong>You:</strong> Refers to the person accessing or using the service or the business or other
+                    authorized entity for which the person is accessing or using the service.</li>
+            </ul>
+
+            <h2 class="fs-5 fw-bold">COOKIES</h2>
+            <p>When you visit our websites, a cookie, a tiny data file, or a piece of information may be placed on your
+                computer's hard drive. We may use cookies to enhance the functionality of our website and, in certain
+                situations, to give users a more personalized online experience. Most web browsers are initially set up
+                to accept cookies because they are frequently used automatically. You may modify your Internet browser's
+                settings to stop your computer from getting cookies or to alert you when one is sent so you can choose
+                whether or not to accept it. Please be aware that disabling cookies may prevent you from using our
+                website to its full potential.</p>
+
+            <h2 class="fs-5 fw-bold">THIRD-PARTY WEBSITES</h2>
+            <p>Please be aware that we are an affiliate company and that there may be content, coupons, advertisements,
+                or blogs that link to third-party websites. Any page that includes links to third parties will receive
+                the appropriate disclosure.</p>
+
+            <h2 class="fs-5 fw-bold">CHANGES TO THE PRIVACY POLICY</h2>
+        </div>
+    </section>
+    <!-- Content End -->
+
+    <!-- Latest Blog Start -->
+    <section class="container my-4">
+
+        <div class="d-flex my-4 align-items-center ">
+            <div class="border-top border-3 w-100"></div>
+            <div class="w-50">
+                <h2 class="text-center fw-normal"> Latest Blogs</h2>
+            </div>
+            <div class="border-top border-3 w-100"></div>
+        </div>
+
+        <div class="row g-4 justify-content-start">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box border rounded">
+                    <img src="../assets/images/qure.png" class="w-100" alt="">
+                    <div class="text-start">
+                        <a href="#" class="btn link-danger fs-5 fw-bold text-start text-dark">
+                            Healthy Skin Happy You With Qure Skin
+                        </a>
+                        <p class="ps-3">
+                            <small>
+                                Within the ever-evolving world of skincare, finding the correct items and schedules can
+                                feel
+                                like
+                                an endless journey. With limitless brands competing for consideration and an
+                                overpowering
+                                cluster of choices, how do you know what's really best for your skin? Choose Qure skin,
+                                a
+                                progressive skincare brand that's changing how we approach skincare.
+                            </small>
+                        </p>
+                        <a href="#" class="btn link-danger fw-bold text-start text-dark">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box border rounded">
+                    <img src="../assets/images/qure.png" class="w-100" alt="">
+                    <div class="text-start">
+                        <a href="#" class="btn link-danger fs-5 fw-bold text-start text-dark">
+                            Healthy Skin Happy You With Qure Skin
+                        </a>
+                        <p class="ps-3">
+                            <small>
+                                Within the ever-evolving world of skincare, finding the correct items and schedules can
+                                feel
+                                like
+                                an endless journey. With limitless brands competing for consideration and an
+                                overpowering
+                                cluster of choices, how do you know what's really best for your skin? Choose Qure skin,
+                                a
+                                progressive skincare brand that's changing how we approach skincare.
+                            </small>
+                        </p>
+                        <a href="#" class="btn link-danger fw-bold text-start text-dark">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-box border rounded">
+                    <img src="../assets/images/qure.png" class="w-100" alt="">
+                    <div class="text-start">
+                        <a href="#" class="btn link-danger fs-5 fw-bold text-start text-dark">
+                            Healthy Skin Happy You With Qure Skin
+                        </a>
+                        <p class="ps-3">
+                            <small>
+                                Within the ever-evolving world of skincare, finding the correct items and schedules can
+                                feel
+                                like
+                                an endless journey. With limitless brands competing for consideration and an
+                                overpowering
+                                cluster of choices, how do you know what's really best for your skin? Choose Qure skin,
+                                a
+                                progressive skincare brand that's changing how we approach skincare.
+                            </small>
+                        </p>
+                        <a href="#" class="btn link-danger fw-bold text-start text-dark">
+                            Read more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Latest Blog End -->
+
+
+    <!-- Footer Start -->
+    <footer class="footer-section text-md-center border text-light">
+        <!-- Grid container -->
+        <div class="container p-4">
+
+
+            <!-- Section: Links -->
+            <section class="links-section ">
+                <!--Grid row-->
+                <div class="row justify-content-center align-items-center">
+                    <!-- Logo column -->
+                    <div class="col-lg-4 col-md-6">
+                        <!-- Content -->
+                        <h6 class="text-lg-start text-center fw-bold">
+                            <img src="assets/images/logo.png" alt="" class="logo">
+                        </h6>
+                        <p class="text-lg-start text-center text-light">
+                            Kwikminds is an online website that provides you unique products. An ideal spot to discover
+                            top-of-the-line items for all: infants, kids, men, women, office workers, and older adults
+                            at low costs. We have brought everything under one roof to give you a stress-free shopping
+                            experience.
+                        </p>
+                    </div>
+                    <!-- Logo column -->
+
+                    <!--Link column-->
+                    <div class="col-lg-4 col-md-6 ">
+                        <h5 class="text-uppercase fw-bold text-light">QUICK LINKS</h5>
+
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <small><i class="fa-solid fa-chevron-right text-black"></i></small>
+                                <a class="hover-text" href="#!"> <span class="btn px-0 text-light">Link 1</span></a>
+                            </li>
+                            <li>
+                                <small><i class="fa-solid fa-chevron-right text-black"></i></small>
+                                <a class="hover-text" href="#!"> <span class="btn px-0 text-light">Link 1</span></a>
+                            </li>
+                            <li>
+                                <small><i class="fa-solid fa-chevron-right text-black"></i></small>
+                                <a class="hover-text" href="#!"> <span class="btn px-0 text-light">Link 1</span></a>
+                            </li>
+                            <li>
+                                <small><i class="fa-solid fa-chevron-right text-black"></i></small>
+                                <a class="hover-text" href="#!"> <span class="btn px-0 text-light">Link 1</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--Link column-->
+
+
+                    <!-- Form column -->
+                    <div class="col-lg-4 col-md-10 ">
+                        <section>
+                            <form action="">
+
+                                <div class="row d-flex justify-content-center">
+
+                                    <div class="col-auto">
+                                        <h5 class="pt-2 text-light">
+                                            <strong>Sign up for our newsletter</strong>
+                                        </h5>
+                                    </div>
+
+
+                                    <div class=" col-12">
+                                        <!-- Email input -->
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Email Address"
+                                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <button class="btn btn-dark px-1 px-md-4" type="button"
+                                                id="button-addon2">Sign
+                                                Up</button>
+                                        </div>
+                                        <!-- Email input -->
+                                    </div>
+
+                                </div>
+
+                            </form>
+                        </section>
+                    </div>
+                    <!-- Form column -->
+
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <!-- Section: Social media -->
+            <section class="social-media-section mt-4 text-center">
+                <!-- Facebook -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-facebook-f fs-5"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-twitter fs-5"></i>
+                </a>
+
+                <!-- Google -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-google fs-5"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-instagram fs-5"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-linkedin-in fs-5"></i>
+                </a>
+
+                <!-- Github -->
+                <a href="#"
+                    class="btn btn-outline-dark btn-floating m-1 shadow rounded-circle border-0 d-inline-flex align-items-center justify-content-center footer-social-icons">
+                    <i class="fab fa-github fs-5"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center pb-2 pt-3 bg-dark">
+            <p>
+                Copyright © Kwikminds 2018 - 2024 . All rights reserved.
+            </p>
+            <p>
+                <span class="fw-bold">Disclosure:</span> We may earn a commission if you use our links/Coupons.
+            </p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer End -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/search.js"></script>
+</body>
+
+</html>
